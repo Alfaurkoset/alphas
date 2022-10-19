@@ -2,8 +2,9 @@
 const { Client, Collection, Intents } = require('discord.js');
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 const config = require('./config.json');
-const deploy = require('./modules/deploy-commands')(client, Collection);
+const deploy = require('./modules/commands-deploy')(client, Collection);
 const fs = require('fs');
+const database = require("./modules/database-initialize")
 
 const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 
