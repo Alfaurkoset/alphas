@@ -1,0 +1,12 @@
+{
+    "BOT": {
+        "TOKEN": "",
+        "CLIENT_ID": ""
+    },
+    "GUILD": {
+        "ID": ""
+    },
+    "ANNOUNCEMENT": {
+        "ANNOUNCEMENT_CHANNEL_ID": ""
+    }
+}
